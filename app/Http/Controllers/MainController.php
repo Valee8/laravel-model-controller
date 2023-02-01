@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Movies;
+use App\Models\Movie;
 
 class MainController extends Controller
 {
     public function home() {
-        $movies = Movies::all();
+        $movies = Movie::all();
 
         $data = [
 
